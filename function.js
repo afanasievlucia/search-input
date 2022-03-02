@@ -14,7 +14,7 @@ const userInput = () => {
 // filter users
 const searchByName = (partialName, users) => {
     let rezultUsers = []
-    users.forEach(user => {
+    users.filter(user => {
         if (user.name.toLowerCase().startsWith(partialName.toLowerCase())) {
             rezultUsers.push(user)
         } 
